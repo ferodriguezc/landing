@@ -15,8 +15,8 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-left'></i></button>",
-    nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right'></i></button>",
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-arrow-left'></i> </button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-arrow-right'></i></button>",
     responsive: [
       {
         breakpoint: 1025,
@@ -62,8 +62,8 @@ $(document).ready(function(){
      slidesToShow: 5,
      slidesToScroll: 1,
      autoplay: true,
-     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-left'></i></button>",
-     nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right'></i></button>",
+     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-arrow-left'></i></button>",
+     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-arrow-right'></i></button>",
      responsive: [
        {
          breakpoint: 1025,
