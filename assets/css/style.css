@@ -1005,17 +1005,19 @@ h6 {
     text-align: center;
   }
 
-}
-
-@media (max-width: 600px) {
-
-  .carrusel {
+ .carrusel {
     display: flex;
     flex-direction: column;
 
   }
 
+  .mt-6{
+    margin-top: 3rem;
+  }
+
+
 }
+
 
 .imagen {
   width: 100%;
@@ -1036,3 +1038,4 @@ h6 {
   margin-left: calc(-.5* var(--bs-gutter-x));
   justify-content: center;
 }
+
