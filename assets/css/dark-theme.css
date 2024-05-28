@@ -587,9 +587,6 @@ html.dark-theme .bubscribe-button {
     border-color: #ffffff;
 }
 
-html.dark-theme .subscribe-banner {
-    background-image: linear-gradient(to bottom, rgb(150 150 150 / 54%), rgb(39 39 39 / 73%)), url(../../../../../../images.pexels.com/photos/5864245/pexels-photo-58642457874.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1);
-}
 
 
 html.dark-theme .accordion-button {
