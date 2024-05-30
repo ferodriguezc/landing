@@ -61,6 +61,8 @@ h6 {
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
 
+
+
 .top-header .primary-menu .navbar-nav a.nav-link {
   color: #222121;
   font-size: 14px;
@@ -242,11 +244,11 @@ h6 {
 
 
 .footer-widget-6 .logo-img {
-  width: 100px;
+  width: 90px;
 }
 
 .top-header .logo-img {
-  width: 100px;
+  width: 90px;
 }
 
 .dropdown-toggle-nocaret:after {
@@ -630,6 +632,7 @@ h6 {
 
 .breadcrumb li.active {
   color: #222121;
+  
 }
 
 
@@ -723,6 +726,9 @@ h6 {
 
 .bg-purple {
   background-color: #723da6 !important;
+}
+.bg-orange {
+  background-color: #fa7900 !important;
 }
 
 .bg-green-light {
@@ -1001,14 +1007,16 @@ h6 {
   transform: scale(1.1);
 }
 
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1* var(--bs-gutter-y));
-  margin-right: calc(-.5* var(--bs-gutter-x));
-  margin-left: calc(-.5* var(--bs-gutter-x));
-  justify-content: center;
+
+
+.banner {
+  padding: 1rem !important;
 }
 
+
+#int-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
