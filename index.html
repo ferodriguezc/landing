@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="light-theme">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -11,48 +11,19 @@
   <!-- CSS files -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
   <!-- Plugins -->
   <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/dark-theme.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <title>Mercado ahorro</title>
 </head>
 
-
-
 <body>
-
-   <!-- barra de navegacion -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-   <!-- fin barra de nabegacion -->
-
-
   <!--loader-->
   <div class="loader-wrapper">
     <div class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle">
@@ -63,25 +34,69 @@
   </div>
   <!--fin loader-->
 
+  <!-- header -->
+  <nav class="navbar  navbar-expand-lg">
+    <div class="nav-container">
+      <img class="imagen" src="assets/images/logos/mercadoahorroVerde.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienessomos">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ofrecemos">Lo que ofrecemos</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- fin header -->
+
 
   <!--Contenido de pagina-->
   <div class="page-content">
 
-    <!-- banner -->
-    <section class="banner">
-      <div class="container text-center">
-        <div class="text-center pb-3">
-          <h1 class="mb-0 h3 fw-bold upca">Los mejores productos al mejor precio</h1>
-          <p class="mb-0 text-capitalize">Encuentra todo lo que necesitas en un solo lugar</p>
+    <!-- quienessomos -->
+    <section id="quienessomos" class="section-padding bg-section-2 mx- ">
+      <div class="container">
+        <div class="p-3 ">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 text-center">
+              <img src="assets/images/extra-images/promo-large.webp" class="img-fluid rounded-0" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <div class="m-3">
+                <h6 class="fw-bold">creemos en la importancia de la innovación y la mejora continua. Por
+                  eso, siempre estamos
+                  actualizando nuestro catálogo y buscando nuevas tendencias para ofrecerte lo mejor del mercado. Ya sea
+                  que
+                  estés buscando un producto en especifico, estamos aquí para satisfacer tus necesidades.</h6>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <img class="img-fluid" src="assets/images/logo/logo.png" alt="" style="min-width: 30vh; max-width: 40%;">
-        </div>
-
       </div>
+    </section>
+    <!--fin  quienessomos -->
 
-
+    <!-- banner -->
+    <section class="banner text-center">
+      <div class="container text-center my-3">
+        <div class="text-center pb-3">
+          <h1 class="mb-0  fw-bold ">Los mejores productos al mejor precio</h1>
+          <h4>
+            <p class="mb-0">Encuentra todo lo que necesitas en un solo lugar</p>
+          </h4>
+        </div>
+      </div>
     </section>
     <!-- fin banner -->
 
@@ -100,22 +115,18 @@
           <!------------------------------------------>
           <div class="carousel-item active bg-primary">
             <div class="cuerpocarrusel row d-flex align-items-center">
-              <div class="carrusel col d-lg-flex justify-content-center mt-6" id="int-slider">
-                <div class="">
-                  <h3 class="h3 fw-light text-white fw-bold">Nuevos Productos</h3>
-                  <h1 class="h1 text-white fw-bold">Moda Femenina</h1>
-                  <p class="text-white fw-bold"><i>Disfruta la nueva linea de moda que tenemos disponible para ti</i></p>
-                  <div class="">
-                    <a class="btn btn-dark btn-ecomm" href="shop-grid.html">Compra Ahora</a>
-                  </div>
+              <div class="carrusel col d-lg-flex justify-content-center m-6" id="int-slider">
+                <div class="mt-5">
+                  <h1 class="h1 text-white fw-bold">Distribuidora LAPAC - DLP</h1>
                 </div>
               </div>
-              <div class="col text-center">
-                <img src="assets/images/sliders/s_1.webp" class="imagen img-fluid zoomIn" alt="...">
+              <div class="col text-center my-5" >
+                <img src="assets/images/logos/dlp.png" class="img-fluid" alt="...">
               </div>
+              
             </div>
           </div>
-          
+
           <!------------------------------------------>
           <!------------------------------------------>
           <!------------------------------------------>
@@ -155,6 +166,7 @@
             </div>
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -168,352 +180,26 @@
       </div>
     </section>
     <!--end carousel-->
- 
-    <hr>
 
-    <!-- Nuevos Productos-->
-    <section class="product-tab-section section-padding bg-light">
-      <div class="container">
-        <!-- ////Titulo nuevos productos//// -->
-        <div class="text-center pb-3">
-          <h3 class="mb-0 h3 fw-bold text-uppercase">Ultimos prodroductos Agregados</h3>
-          <p class="mb-0 text-capitalize">Ve las ultimas novedades aqui</p>
-        </div>
-        <!-- ////////////////////////////////// -->
-
-        <!-- ////////////////////////////////// -->
-        <div class="tab-content tabular-product">
-          <div class="tab-pane fade show active" id="new-arrival">
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-5 g-4">
-              <!-- ///////////item 1////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <!-- /////icono lupa/////// -->
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                      <!-- //// -->
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/01.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 1////////////////// -->
-
-              <!-- ///////////item 2////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="ribban">Nueva temporada</div>
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/02.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 2////////////////// -->
-
-              <!-- ///////////item 3////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/03.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 3////////////////// -->
-
-              <!-- ///////////item 4////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/04.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 4////////////////// -->
-
-              <!-- ///////////item 5////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/05.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 5////////////////// -->
-
-              <!-- ///////////item 6////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/06.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 6////////////////// -->
-
-              <!-- ///////////item 7////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/07.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 7////////////////// -->
-
-              <!-- ///////////item 8////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/08.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 8////////////////// -->
-
-              <!-- ///////////item 9////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/09.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 9////////////////// -->
-
-              <!-- ///////////item 10////////////////// -->
-              <div class="col">
-                <div class="card">
-                  <div class="position-relative overflow-hidden">
-                    <div
-                      class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                      <a class="change-image" href="javascript:;" data-bs-toggle="modal"
-                        data-bs-target="#QuickViewModal"><i class="fas fa-search"></i></a>
-                    </div>
-                    <a href="product-details.html">
-                      <img src="assets/images/new-arrival/10.webp" class="card-img-top" alt="...">
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <div class="product-info text-center">
-                      <h6 class="mb-1 fw-bold product-name">Product Name</h6>
-                      <div class="ratings mb-1 h6">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </div>
-                      <p class="mb-0 h6 fw-bold product-price">$49</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ///////////fin item 10////////////////// -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Fin Nuevos Productos-->
-
-
-    <!--start features-->
-    <section class="product-thumb-slider section-padding">
+    <!--start lo que ofrecemos-->
+    <section id="ofrecemos" class="product-thumb-slider section-padding">
       <div class="container">
         <div class="text-center pb-3">
           <h3 class="mb-0 h3 fw-bold">¡Lo que ofrecemos!</h3>
         </div>
         <div class="row row-cols-1 row-cols-lg-4 g-4">
-          <div class="col d-flex">
+          <div class="col-6 d-flex">
             <div class="card depth border-0 rounded-0 border-bottom border-primary border-3 w-100">
               <div class="card-body text-center">
                 <div class="h1 fw-bold my-2 text-primary">
                   <i class="fa-solid fa-truck"></i>
                 </div>
-                <h5 class="fw-bold">Despacho Gratis</h5>
+                <h5 class="fw-bold">Despacho </h5>
                 <p class="mb-0">Contamos con el mejor servicio de despacho.</p>
               </div>
             </div>
           </div>
-          <div class="col d-flex">
+          <div class="col-6 d-flex">
             <div class="card depth border-0 rounded-0 border-bottom border-danger border-3 w-100">
               <div class="card-body text-center">
                 <div class="h1 fw-bold my-2 text-danger">
@@ -524,194 +210,140 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex">
-            <div class="card depth border-0 rounded-0 border-bottom border-success border-3 w-100">
-              <div class="card-body text-center">
-                <div class="h1 fw-bold my-2 text-success">
-                  <i class="fa-solid fa-arrows-rotate"></i>
-                </div>
-                <h5 class="fw-bold">Devoluciones</h5>
-                <p class="mb-0">Queremos que estés completamente satisfecho con tu compra.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex">
-            <div class="card depth border-0 rounded-0 border-bottom border-warning border-3 w-100">
-              <div class="card-body text-center">
-                <div class="h1 fw-bold my-2 text-warning">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <h5 class="fw-bold">Soporte 24/7</h5>
-                <p class="mb-0">Ofrecemos soporte 24/7 para ayudarte siempre que lo necesites.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--end row-->
-      </div>
-    </section>
-    <!--end features-->
-
-
-    <!--start special product-->
-    <section class="section-padding bg-section-2">
-      <div class="container">
-        <div class="card border-0 rounded-0 p-3 depth">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <img src="assets/images/extra-images/promo-large.webp" class="img-fluid rounded-0" alt="...">
-            </div>
-            <div class="col-lg-6">
-              <div class="card-body">
-                <h3 class="fw-bold">Prueba nuestra aplicacion movil, y sorpréndete con todos nuestros productos</h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item bg-transparent px-0">En ella encontras.</li>
-                  <li class="list-group-item bg-transparent px-0">...
-                  </li>
-                  <li class="list-group-item bg-transparent px-0">...</li>
-                  <li class="list-group-item bg-transparent px-0">...</li>
-                </ul>
-                <div class="buttons mt-4 d-flex flex-column flex-lg-row gap-3">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>    
-    <!--start special product-->
-
-
-
-    <!--start cartegory slider-->
-    <section class="cartegory-slider section-padding bg-section-2">
-      <div class="container">
-        <div class="text-center pb-3">
-          <h3 class="mb-0 h3 fw-bold">Categorias de productos</h3>
-          <p class="mb-0 text-capitalize">Aquí tienes algunas categorías de productos que trabajamos</p>
-        </div>
-        <div class="cartegory-box">
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/01.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Electrónica y Tecnología</h5>
-              
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/02.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Moda y Ropa</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/03.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Hogar y Cocina</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/04.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Salud y Belleza</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/05.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Deportes y Aire Libre</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="shop-grid-type-4.html">
-            <div class="card">
-              <div class="card-body">
-                <div class="overflow-hidden">
-                  <img src="assets/images/categories/06.webp" class="card-img-top rounded-0" alt="...">
-                </div>
-                <div class="text-center">
-                  <h5 class="mb-1 cartegory-name mt-3 fw-bold">Juguetes y Juegos</h5>
-                </div>
-              </div>
-            </div>
-          </a>
 
         </div>
-      </div>
-    </section>
-    <!--end cartegory slider-->
+     </div>
+  </section>
+  <!--end ofrecemos-->
 
 
-    <!--subscribe banner-->
-    <section class="product-thumb-slider subscribe-banner p-5 bg-dark">
-      <div class="row">
-        <div class="col-12 col-lg-6 mx-auto">
-          <div class="text-center">
-            <h3 class="mb-0 fw-bold text-white">ENTERATE DE LAS ULTIMAS<br> NOVEDADES</h3>
-            <div class="mt-3">
-              <input type="text" class="form-control form-control-lg bubscribe-control rounded-0 px-5 py-3"
-                placeholder="Ingresa tu Correo">
-            </div>
-            <div class="mt-3 d-grid">
-              <button type="button" class="btn btn-lg btn-ecomm bubscribe-button px-5 py-3">Subscribete</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--subscribe banner-->
-
-
-    <!-- botones para APP -->
-
-    <div class="my-6">
-      <div class="text-center">
-        <h5 class="fw-bold mb-3">Descarga Nuestra App</h5>
-      </div>
-
-      <div class="app-icon d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
-        <div>
-          <a href="javascript:;">
-            <img src="assets/images/play-store.webp" width="260" alt="">
-          </a>
-        </div>
-        <div>
-          <a href="javascript:;">
-            <img src="assets/images/apple-store.webp" width="260" alt="">
-          </a>
-        </div>
+  <!--start Nuestras marcas slider-->
+  <section class="cartegory-slider section-padding bg-section-2">
+    <div>
+    <div class="container">
+      <div class="text-center pb-3">
+        <h3 class="mb-0 h3 fw-bold">Nuestras marcas</h3>
+        <p class="mb-0 text-capitalize">Estas son algunas de las marcas que trabajamos</p>
       </div>
     </div>
-  </div>
+    <div class="cartegory-box">
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/ariel.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/clorinda.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/clorox.png" class="card-img-top rounded-0" alt="..." >
+            </div>
+
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/omo.png" class="card-img-top rounded-0" alt="...">
+            </div>
+
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/colgate.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/dove.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/fuzol.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/garnier.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/pantene.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="overflow-hidden">
+              <img src="assets/images/logos/tionacho.png" class="card-img-top rounded-0" alt="...">
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </section>
+  <!--end cartegory slider-->
+
+
+  <!-- botones para APP -->
+  <div class="my-6">
+    <div class="text-center">
+      <h2 class="fw-bold mb-3 text-uppercase">Muy pronto podrás acceder a nuestra app</h2>
+    </div>
+
+    <div class="app-icon d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
+      <div>
+        <a href="">
+          <img src="assets/images/play-store.webp" width="260" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <img src="assets/images/apple-store.webp" width="260" alt="">
+        </a>
+      </div>
+    </div>
   </div>
   <!--end row-->
 
@@ -725,15 +357,6 @@
   <section class="footer-section bg-section-2 section-padding">
     <div class="container">
       <div class="row row-cols-1 row-cols-lg-4 g-4">
-        <div class="col">
-          <div class="footer-widget-6">
-
-            <h5 class="mb-3 fw-bold">Sobre Nosotros</h5>
-            <p class="mb-2">En Mecado Ahorro, nos dedicamos a ofrecer una amplia variedad de productos de alta calidad a precios competitivos. Nuestro compromiso es brindar a nuestros clientes una experiencia de compra excepcional, con un enfoque en la satisfacción y el ahorro. Desde alimentos frescos hasta artículos de hogar, cada producto es seleccionado cuidadosamente para asegurar su frescura y durabilidad.</p>
-
-
-          </div>
-        </div>
         <div class="col">
           <div class="footer-widget-8">
             <h5 class="mb-3 fw-bold">Compañía</h5>
@@ -807,7 +430,7 @@
 
   <!--texto final-->
   <footer class="footer-strip text-center py-3 bg-section-2 border-top positon-absolute bottom-0">
-    <p class="mb-0 text-muted">© 2024. www.mimercadoahorro.cl | Todos los derechos reservados.</p>
+    <p class="mb-0 text-muted">© 2024. www.example.com | Todos los derechos reservados.</p>
   </footer>
   <!--final de texto final-->
 
@@ -838,13 +461,14 @@
 
 
   <!-- JavaScript files -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/plugins/slick/slick.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
   <script>
     document.querySelectorAll('.change-image').forEach(link => {
