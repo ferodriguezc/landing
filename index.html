@@ -6,10 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--favicon-->
-  <link rel="icon" href="assets/images/favicon-32x32.webp" type="image/webp" />
+  <link rel="icon" href="assets/images/logos/mercadoahorroVerde.png" type="image/webp" />
 
   <!-- CSS files -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&amp;display=swap" rel="stylesheet">
 
   <!-- Plugins -->
@@ -17,6 +16,8 @@
   <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-animation3.css" rel="stylesheet">
+  <link href="assets/js/script.js" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -35,25 +36,27 @@
   <!--fin loader-->
 
   <!-- header -->
-  <nav class="navbar  navbar-expand-lg">
-    <div class="nav-container">
-      <img class="imagen" src="assets/images/logos/mercadoahorroVerde.png" alt="">
+  <nav class="navbar navbar-expand-lg shadow sticky-top bg-white">
+    <div class="container">
+      <img src="assets/images/logos/mercadoahorroVerde.png" alt="" class="imagen">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#quienessomos">Quienes somos</a>
+            <a class="nav-link" href="#"><i class="fas fa-star"></i> Lo que ofrecemos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ofrecemos">Lo que ofrecemos</a>
+            <a class="nav-link" href="#"><i class="fas fa-tags"></i> Nuestras marcas</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Acerca de</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -62,19 +65,51 @@
 
 
   <!--Contenido de pagina-->
-  <div class="page-content">
+  <div class="page-content ">
+
+
 
     <!-- quienessomos -->
-    <section id="quienessomos" class="section-padding bg-section-2 mx- ">
+    <section id="quienessomos" class="section-padding bg-section-2  ">
       <div class="container">
-        <div class="p-3 ">
+        <div class="p-3">
           <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <img src="assets/images/extra-images/promo-large.webp" class="img-fluid rounded-0" alt="...">
+
+
+            <!-- banner -->
+            <div class="col-lg-6">
+              <section class="banner text-center">
+                <div class="container text-center ">
+                  <div class="text-center pb-3">
+                    <h1 class="mb-0  fw-bold ">Los mejores productos al mejor precio</h1>
+                    <h4>
+                      <p class="mb-0">Encuentra todo lo que necesitas en un solo lugar</p>
+                    </h4>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- fin banner -->
+
+
+            <div class="col-lg-6 "
+              style="overflow: hidden; overflow: hidden; display: flex; flex-direction: row;justify-content: center;">
+
+              <div id="robot">
+                <div id="ojo">
+                  <div id="pupila"></div>
+                </div>
+                <div id="ojo2">
+                  <div id="pupila2"></div>
+                </div>
+
+              </div>
             </div>
             <div class="col-lg-6">
               <div class="m-3">
-                <h6 class="fw-bold">creemos en la importancia de la innovación y la mejora continua. Por
+                <h6 class="fw-bold" style="text-align: justify;">creemos en la importancia de la innovación y la mejora
+                  continua. Por
                   eso, siempre estamos
                   actualizando nuestro catálogo y buscando nuevas tendencias para ofrecerte lo mejor del mercado. Ya sea
                   que
@@ -87,18 +122,7 @@
     </section>
     <!--fin  quienessomos -->
 
-    <!-- banner -->
-    <section class="banner text-center">
-      <div class="container text-center my-3">
-        <div class="text-center pb-3">
-          <h1 class="mb-0  fw-bold ">Los mejores productos al mejor precio</h1>
-          <h4>
-            <p class="mb-0">Encuentra todo lo que necesitas en un solo lugar</p>
-          </h4>
-        </div>
-      </div>
-    </section>
-    <!-- fin banner -->
+
 
     <!--start carousel-->
     <section class="slider-section">
@@ -109,64 +133,63 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
         </div>
-        <div class="carousel-inner">
-          <!------------------------------------------>
-          <!------------------------------------------>
-          <!------------------------------------------>
-          <div class="carousel-item active bg-primary">
-            <div class="cuerpocarrusel row d-flex align-items-center">
-              <div class="carrusel col d-lg-flex justify-content-center m-6" id="int-slider">
-                <div class="mt-5">
-                  <h1 class="h1 text-white fw-bold">Distribuidora LAPAC - DLP</h1>
-                </div>
-              </div>
-              <div class="col text-center my-5" >
-                <img src="assets/images/logos/dlp.png" class="img-fluid" alt="...">
-              </div>
-              
-            </div>
-          </div>
 
-          <!------------------------------------------>
-          <!------------------------------------------>
-          <!------------------------------------------>
-          <div class="carousel-item bg-orange">
-            <div class="cuerpocarrusel row d-flex align-items-center">
-              <div class="carrusel col  d-lg-flex justify-content-center mt-6">
-                <div class="">
-                  <h3 class="h3 fw-light text-dark fw-bold">Latest Trending</h3>
-                  <h1 class="h1 text-dark fw-bold">Electronics Items</h1>
-                  <p class="text-dark fw-bold"><i>Last call for upto 45%</i></p>
-                  <div class=""><a class="btn btn-dark btn-ecomm" href="shop-grid.html">Shop Now</a>
-                  </div>
+        <div class="carousel-inner ">
+          <!-- /////////////////////// -->
+          <div class="carousel-item active bg-primary">
+            <div class="row">
+
+              <div class="col-12">
+                <img src="assets/images/logos/dlp.png" class="img-carrusel d-block w-50 h-30" alt="Slide 1">
+              </div>
+
+              <div class="col-12">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-black">First Slide Label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
-              <div class="col text-center">
-                <img src="assets/images/sliders/s_4.webp" class="img-fluid" alt="...">
-              </div>
+
             </div>
           </div>
-          <!------------------------------------------>
-          <!------------------------------------------>
-          <!------------------------------------------>
+          <!-- /////////////////////// -->
           <div class="carousel-item bg-green">
-            <div class="cuerpocarrusel row d-flex align-items-center">
-              <div class="carrusel col  d-lg-flex justify-content-center mt-6">
-                <div class="">
-                  <h3 class="h3 fw-light text-white fw-bold">Super Ofertas</h3>
-                  <h1 class="h1 text-white fw-bold">Muebles para el Hogar</h1>
-                  <p class="text-white fw-bold"><i>Aprovecha nuestras ofertas</i></p>
-                  <div class=""><a class="btn btn-dark btn-ecomm" href="shop-grid.html">Shop Now</a>
-                  </div>
+            <div class="row">
+
+              <div class="col-12">
+                <img src="assets/images/logos/dlp.png" class="img-carrusel d-block w-50 h-30" alt="Slide 1">
+              </div>
+
+              <div class="col-12">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second Slide Label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
-              <div class="col text-center">
-                <img src="assets/images/sliders/s_5.webp" class="img-fluid" alt="...">
-              </div>
             </div>
+
+
+          </div>
+          <!-- /////////////////////// -->
+          <div class="carousel-item bg-orange">
+            <div class="row">
+
+              <div class="col-12">
+                <img src="assets/images/logos/dlp.png" class="img-carrusel d-block w-50 h-30" alt="Slide 1">
+              </div>
+
+              <div class="col-12">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third Slide Label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
         </div>
-
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -181,13 +204,14 @@
     </section>
     <!--end carousel-->
 
+
     <!--start lo que ofrecemos-->
-    <section id="ofrecemos" class="product-thumb-slider section-padding">
-      <div class="container">
+    <section id="ofrecemos" class="product-thumb-slider section-padding ">
+      <div class="containermy-4">
         <div class="text-center pb-3">
           <h3 class="mb-0 h3 fw-bold">¡Lo que ofrecemos!</h3>
         </div>
-        <div class="row row-cols-1 row-cols-lg-4 g-4">
+        <div class="row ">
           <div class="col-6 d-flex">
             <div class="card depth border-0 rounded-0 border-bottom border-primary border-3 w-100">
               <div class="card-body text-center">
@@ -212,140 +236,140 @@
           </div>
 
         </div>
-     </div>
-  </section>
-  <!--end ofrecemos-->
-
-
-  <!--start Nuestras marcas slider-->
-  <section class="cartegory-slider section-padding bg-section-2">
-    <div>
-    <div class="container">
-      <div class="text-center pb-3">
-        <h3 class="mb-0 h3 fw-bold">Nuestras marcas</h3>
-        <p class="mb-0 text-capitalize">Estas son algunas de las marcas que trabajamos</p>
       </div>
-    </div>
-    <div class="cartegory-box">
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/ariel.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/clorinda.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/clorox.png" class="card-img-top rounded-0" alt="..." >
-            </div>
-
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/omo.png" class="card-img-top rounded-0" alt="...">
-            </div>
-
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/colgate.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/dove.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/fuzol.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/garnier.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/pantene.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <div class="card-body">
-            <div class="overflow-hidden">
-              <img src="assets/images/logos/tionacho.png" class="card-img-top rounded-0" alt="...">
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    </div>
-  </section>
-  <!--end cartegory slider-->
+    </section>
+    <!--end ofrecemos-->
 
 
-  <!-- botones para APP -->
-  <div class="my-6">
-    <div class="text-center">
-      <h2 class="fw-bold mb-3 text-uppercase">Muy pronto podrás acceder a nuestra app</h2>
-    </div>
-
-    <div class="app-icon d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
+    <!--start Nuestras marcas slider-->
+    <section class="cartegory-slider section-padding bg-section-2">
       <div>
-        <a href="">
-          <img src="assets/images/play-store.webp" width="260" alt="">
-        </a>
+        <div class="container">
+          <div class="text-center pb-3">
+            <h3 class="mb-0 h3 fw-bold">Nuestras marcas</h3>
+            <p class="mb-0 text-capitalize">Estas son algunas de las marcas que trabajamos</p>
+          </div>
+        </div>
+        <div class="cartegory-box" style="margin: 5%;">
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/ariel.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/clorinda.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/clorox.png" class="card-img-top rounded-0" alt="...">
+                </div>
+
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/omo.png" class="card-img-top rounded-0" alt="...">
+                </div>
+
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/colgate.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/dove.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/fuzol.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/garnier.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/pantene.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="card-body">
+                <div class="overflow-hidden">
+                  <img src="assets/images/logos/tionacho.png" class="card-img-top rounded-0" alt="...">
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="">
-          <img src="assets/images/apple-store.webp" width="260" alt="">
-        </a>
+    </section>
+    <!--end cartegory slider-->
+
+
+    <!-- botones para APP -->
+    <div class="my-6">
+      <div class="text-center">
+        <h2 class="fw-bold mb-3 text-uppercase">Muy pronto podrás acceder a nuestra app</h2>
+      </div>
+
+      <div class="app-icon d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
+        <div>
+          <a href="">
+            <img src="assets/images/play-store.webp" width="260" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img src="assets/images/apple-store.webp" width="260" alt="">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <!--end row-->
+    <!--end row-->
 
   </div>
   <!--fin Contenido de pagina-->
@@ -430,7 +454,7 @@
 
   <!--texto final-->
   <footer class="footer-strip text-center py-3 bg-section-2 border-top positon-absolute bottom-0">
-    <p class="mb-0 text-muted">© 2024. www.example.com | Todos los derechos reservados.</p>
+    <p class="mb-0 text-muted">© 2024. www.mimercadoahorro.cl | Todos los derechos reservados.</p>
   </footer>
   <!--final de texto final-->
 
@@ -482,6 +506,38 @@
         // Mostrar el modal
         $('#QuickViewModal').modal('show');
       });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var robot = document.getElementById('robot');
+      var pupila1 = document.getElementById('pupila');
+      var pupila2 = document.getElementById('pupila2');
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            // Start animating
+            document.addEventListener('mousemove', movePupilas);
+          } else {
+            // Stop animating
+            document.removeEventListener('mousemove', movePupilas);
+          }
+        });
+      });
+
+      observer.observe(robot);
+
+      function movePupilas(event) {
+        var x = event.pageX / 1.7 / window.innerWidth * 100;
+        var y = event.pageY / 1.7 / window.innerHeight * 100;
+
+        pupila1.style.left = x + '%';
+        pupila1.style.top = y + '%';
+
+        pupila2.style.left = x + '%';
+        pupila2.style.top = y + '%';
+      }
     });
   </script>
 

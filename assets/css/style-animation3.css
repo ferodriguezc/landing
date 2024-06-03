@@ -1,0 +1,80 @@
+#robot {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../imagen-animacion/carrito.png);
+    background-size: contain; /* Usa 'contain' para que la imagen se ajuste dentro del div */
+    background-position: center; /* Centra la imagen en el div */
+    background-repeat: no-repeat;
+    max-width: 200px;
+    max-height: 200px;
+    animation: movimiento 1s infinite;
+}
+
+
+@keyframes movimiento {
+    0%{transform:scaley(1);}
+    50%{ transform:scaley(0.97);}
+    0%{transform:scaley(1);}
+}
+
+
+#ojo {
+    position: absolute;
+    width: 30px; /* Ajusta el tamaño fijo */
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border: 2px #000000 solid;
+    background-color: white;
+    border-radius: 50%;
+    top: 30%;
+    left: 45%;
+    overflow: hidden;
+   
+}
+
+#ojo2 {
+    position: absolute;
+    border: 2px black solid;
+    width: 30px; /* Ajusta el tamaño fijo */
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px; 
+    background-color: white;
+    border-radius: 50%;
+    top: 30%;
+    left: 70%;
+    overflow: hidden;
+}
+
+#pupila {
+    position: absolute;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+
+}
+
+#pupila2 {
+    position: absolute;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+
+}
+
+
+
