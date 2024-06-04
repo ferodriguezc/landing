@@ -681,6 +681,12 @@ h6 {
   background-color: #21ad61 !important;
 }
 
+.text-green{
+  color: #21ad61 !important;
+}
+
+
+
 .bg-pink {
   background-color: #ed4264 !important;
 }
@@ -963,54 +969,104 @@ h6 {
   padding: 1rem !important;
 }
 
-#int-slider {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-}
-
 #imagen-banner {
   border-radius: 100%;
   max-width: 70%;
   max-height: auto;
 }
 
-.font-cour {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
 .imagen {
-  width: 20vb;
-  min-width: 50px;
+  width: 30vb;
+  min-width:80px;
   margin-left: 20px;
   margin-right: 100px;
 }
 
+.font-cour {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+
+
+/*carrusel marcas*/
+
 .cartegory-box .card img {
-  padding: 30px;
+  padding: 25px;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
+.slick-slider .slick-next:before,
+.slick-slider .slick-prev:before {
+  color: #000 !important;
+  width: 100px !important;
+  font-size: 25px !important;
+  background-color: transparent !important;
+  background: none !important;
 }
 
-.carousel-inner {
-  height: 5%;
-  min-height: 100%;
+/********************/
+
+
+/*logo*/
+
+.logo-img {
+  width: 30%;
+  max-width: 30%;
+  margin: 20px;
 }
 
-.carousel-item {
-  height: 100%;
-  width: 100%;
+.logo-end {
+  display: flex !important;
+  justify-content: flex-end;
+}
+/********************/
+
+
+
+/* proveedores*/
+#prove_1 {
+  background: rgb(0, 153, 235);
 }
 
-.img-carrusel {
-  max-width: 35%;
+#prove_2 {
+  background: rgb(0, 235, 6);
+}
+#prove_3 {
+  background: rgb(235, 148, 0);
+}
+
+/********************/
+
+
+
+/* animaciones*/
+
+.card-animacion {
+  transition: transform 0.5s;
+}
+
+.card-animacion:hover {
+  transform: translateY(-10px);
+}
+/********************/
+
+
+/* slider proveedores */
+
+#prove_1 {
+  background-color: #00acee !important;
+}
+#prove_2 {
+  background-color: #2ac10c !important;
+}
+#prove_3 {
+  background-color: #ff8c00 !important;
+}
+
+/********************/
+
+
+.iframe{
+
+width: 50%;
+
 }

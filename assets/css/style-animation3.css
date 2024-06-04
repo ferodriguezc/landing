@@ -1,80 +1,50 @@
 #robot {
     position: relative;
-    width: 30vw;
-    height: 30vw;
+    width: 20vw; /* Ancho relativo al ancho de la ventana */
+    height: 20vw; /* Altura relativa al ancho de la ventana */
+    max-width: 190px; /* Ancho máximo en píxeles */
+    max-height: 190px; /* Altura máxima en píxeles */
     background-image: url(../imagen-animacion/carrito.png);
-    background-size: contain; /* Usa 'contain' para que la imagen se ajuste dentro del div */
-    background-position: center; /* Centra la imagen en el div */
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    max-width: 200px;
-    max-height: 200px;
-    animation: movimiento 1s infinite;
+    animation: movimiento 0.5s infinite alternate;
+    transform: rotateX(45deg);
 }
-
 
 @keyframes movimiento {
-    0%{transform:scaley(1);}
-    50%{ transform:scaley(0.97);}
-    0%{transform:scaley(1);}
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(0.97); }
+    100% { transform: scaleY(1); }
 }
 
-
-#ojo {
+#ojo, #ojo2 {
     position: absolute;
-    width: 30px; /* Ajusta el tamaño fijo */
-    height: 30px;
-    min-width: 30px;
-    min-height: 30px;
-    border: 2px #000000 solid;
+    width: 4.5vw; /* Ancho relativo al ancho de la ventana */
+    height: 4.5vw; /* Altura relativa al ancho de la ventana */
+    border: 2px #000 solid;
     background-color: white;
     border-radius: 50%;
-    top: 30%;
-    left: 45%;
     overflow: hidden;
-   
+}
+
+#ojo {
+    top: 15%;
+    left: 45%;
 }
 
 #ojo2 {
-    position: absolute;
-    border: 2px black solid;
-    width: 30px; /* Ajusta el tamaño fijo */
-    height: 30px;
-    min-width: 30px;
-    min-height: 30px; 
-    background-color: white;
-    border-radius: 50%;
-    top: 30%;
+    top: 15%;
     left: 70%;
-    overflow: hidden;
 }
 
-#pupila {
+#pupila, #pupila2 {
     position: absolute;
-    width: 20px;
-    min-width: 20px;
-    height: 20px;
-    min-height: 20px;
+    width: 3vw; /* Ancho relativo al ancho de la ventana */
+    height: 3vw; /* Altura relativa al ancho de la ventana */
     background-color: black;
     border-radius: 50%;
     top: 50%;
     left: 50%;
-
-
+    transform: translate(-50%, -50%);
 }
-
-#pupila2 {
-    position: absolute;
-    width: 20px;
-    min-width: 20px;
-    height: 20px;
-    min-height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-
-
-}
-
-
-
